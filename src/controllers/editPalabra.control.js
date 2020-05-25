@@ -22,12 +22,11 @@ window.handleBtnEdit = (id) => {
       elements.ejemploInputEditable3.value = doc.data().ejemplo[2];
       elements.sinominosInputEditable.value = doc.data().sinonimos[0];
       elements.sinominosInputEditable2.value = doc.data().sinonimos[1];
-      elements.sinominosInputEditable3.value = doc.data().sinonimos[2];
-      elements.sinominosInputEditable4.value = doc.data().sinonimos[3];
+      elements.sinominosInputEditable3.value = doc.data().sinonimos[2] || '';
+      elements.sinominosInputEditable4.value = doc.data().sinonimos[3] || '';
       elements.gramaInputEditable.value = doc.data().gramatical;
 
       const gram = doc.data().gramatical;
-
       if (gram === 'Verbo') {
         elements.gramaInputEditable[0].checked = true;
       } else if (gram === 'Sustantivo') {
