@@ -30,13 +30,22 @@
     }
 
     .btnExitEditable {
-      position: absolute;
-      top: 8px;
-      right: 16px;
       cursor: pointer;
       color: $red;
       font-size: 22px;
+      border: none;
+      background-color: transparent;
+      &:hover {
+        background-color: $red;
+        color: #fff;
+        padding: 2px 4px;
+        border-radius: 2px;
+      }
+      &.bx {
+        padding: 0;
+      } 
     }
+
 
     .btnUpdate {
       margin-top: 10px;
