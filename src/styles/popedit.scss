@@ -1,0 +1,65 @@
+@import "./variables";
+
+.popEdit {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  opacity: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100%;
+  
+
+  .boxEdit {
+    display: none;
+    position: relative;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+    min-height: 32vh;
+    
+    .btnExitEditable {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      cursor: pointer;
+      color: $red;
+      font-size: 22px;
+    }
+    label {
+      margin-bottom: 0;
+      color: $gray;
+    }
+    .field {
+      margin-bottom: 10px;
+    }
+  
+    .btnUpdate {
+      margin-top: 10px;
+      border: none;
+      border-radius: 2px;
+      background: $green;
+      padding: 6px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      .bx {
+        position: relative;
+        top: 4px;
+        color: #fff;
+        font-size: 24px;
+      }
+  
+      &:hover {
+        background-color: $green_b;
+      }
+    }
+  }
+  }

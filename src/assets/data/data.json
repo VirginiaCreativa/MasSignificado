@@ -1,0 +1,21 @@
+[{
+  "id": 0,
+  "palabra": "Acudir",
+  "definicion": "Ir alguien al sitio adonde le conviene o es llamado",
+  "sinonimos": "asistir, ir, llegar, afluir, presentarse",
+  "gramatical": "verbo"
+}, {
+  "id": 1,
+  "palabra": "Cuestionar",
+  "definicion": "Discutir o poner en duda un asunto dudoso",
+  "sinonimos": "discustir, debatir, disputar, objetar",
+  "gramatical": "verbo"
+
+}, {
+  "id": 2,
+  "palabra": "Exporto, ta",
+  "definicion": "Hábil o con mucha experiencia en algo",
+  "sinonimos": "diestro, entendido, técnico, competente",
+  "gramatical": "adjetivo"
+
+}]

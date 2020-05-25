@@ -1,0 +1,344 @@
+@import "./variables";
+
+.headingTitle {
+  display: none;
+  grid-template-columns: 120px 1fr 240px 220px 80px;
+  grid-gap: 10px;
+  transition: all 0.3s ease-in;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $green;
+  border-radius: 2px;
+  padding: 10px;
+
+  .col {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    h1 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: $gray;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+.boxButtonAdd {
+  position: relative;
+  margin-bottom: 20px;
+
+  .btnShowAdd,
+  .btnHideAdd {
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0;
+    .bx {
+      padding: 5px;
+      height: 36px;
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+
+  .btnShowAdd {
+    background-color: $green;
+  }
+
+  .btnHideAdd {
+    background-color: $red;
+  }
+}
+
+.boxSearching {
+  display: none;
+  position: relative;
+  margin: 20px 0;
+
+  .searchInput {
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid $gray_d;
+    border-left: none;
+    background-color: transparent;
+    padding: 6px;
+    width: 100%;
+  }
+
+  .searchButton {
+    position: absolute;
+    top: 2px;
+    right: 14.5px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: transparent;
+    padding: 6px 10px;
+
+    .bx {
+      color: $gray;
+    }
+  }
+
+  .searchResult {
+    margin-bottom: 0;
+  }
+}
+
+.boxContentApunte {
+  min-height: 78vh;
+
+  .itemsApunte {
+    margin-bottom: 10px;
+
+    >li {
+      margin-bottom: 20px;
+      border-left: 4px solid $green;
+      border-radius: 4px;
+      box-shadow: 0px 0px 3px 0px rgba(130, 152, 172, 0.2);
+      background-color: #fff;
+      padding: 20px;
+
+      .boxHeading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .item_palabra {
+          h3 {
+            color: $green;
+          }
+        }
+
+        .btnElimina {
+          margin-left: 5px;
+          border: none;
+          border-radius: 2px;
+          background-color: transparent;
+          padding: 2px 6px;
+
+          .bx {
+            color: $gray_d;
+            font-size: 16px;
+          }
+
+          &:hover {
+            background-color: #ddd;
+
+            .bx {
+              color: $red;
+            }
+          }
+        }
+
+        .btnEdit {
+          border: none;
+          border-radius: 2px;
+          background-color: transparent;
+          padding: 2px 6px;
+
+          .bx {
+            color: $gray_d;
+            font-size: 16px;
+          }
+
+          &:hover {
+            background-color: #ddd;
+
+            .bx {
+              color: $blue;
+            }
+          }
+        }
+      }
+
+      .boxContent {
+        margin-bottom: 20px;
+
+        p {
+          display: block;
+          margin-bottom: 0;
+          overflow-wrap: break-word;
+
+          &.item_gram {
+            color: $gray_d;
+            font-size: 13px;
+            font-weight: 500;
+          }
+
+        }
+
+        .item_definition {
+          margin-bottom: 20px;
+          padding-left: 0;
+          list-style-position: inside;
+        }
+
+        .item_ejemplo {
+          margin-bottom: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+          padding-left: 0;
+          list-style-position: inside;
+          color: $gray_d;
+          font-style: italic;
+
+          li {
+            color: $blue_b;
+            font-size: 14px;
+            font-style: italic;
+
+            &::after {
+              content: '"';
+            }
+
+            &::before {
+              content: '"';
+            }
+          }
+        }
+      }
+
+
+      .itemListSin {
+        margin-left: 0;
+        padding-left: 0;
+        list-style-position: inside;
+
+        li {
+          display: inline;
+          margin-right: 10px;
+          border-radius: 2px;
+          background-color: #eee;
+          padding: 2px 8px;
+          text-align: center;
+          color: $gray;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+    }
+  }
+}
+
+.boxAddPalabra {
+  display: none;
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  .addSubmitForm {
+    position: relative;
+    label {
+      color: $gray_d;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    hr {
+      display: block;
+      border-bottom: 0.5px solid #dbdbdb;
+      padding: 0 20px;
+      width: 30%;
+    }
+
+    .field {
+      margin-bottom: 10px;
+      border: 2px solid $green;
+      border-radius: 2px;
+      background: transparent;
+      padding: 6px;
+      width: 100%;
+    }
+
+    .allCheck {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .fielChecks {
+        margin-right: 15px;
+      }
+
+      label {
+
+        padding: 0;
+        color: $gray_d;
+
+        input[type="radio"] {
+          display: none;
+
+          &:checked {
+            +.box {
+              border: 2px solid $green;
+              box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+              background-color: #f3f3f3;
+            }
+          }
+        }
+      }
+
+      .box {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        transition: all 250ms ease;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 120px;
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+        will-change: transition;
+
+        &:active {
+          border: 2px solid $green;
+          background-color: #f0eeee;
+        }
+      }
+
+      .form-check-input {
+        margin-top: 0.4rem;
+        margin-left: 0;
+
+        &:checked {
+          .fielChecks {
+            border: 2px solid $blue_b;
+          }
+        }
+      }
+    }
+
+    .btnHandleAddPalabra {
+      margin: 20px 0;
+      background-color: $green;
+      padding: 15px;
+      color: #fff;
+
+      &:hover {
+        background-color: $green_b;
+      }
+    }
+  }
+}
+.formError {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  border-radius: 4px;
+  padding: 6px 0;
+
+  &[class*="formError_"]
+  {
+    display: none;
+    margin-bottom: 0;
+    color: $red;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

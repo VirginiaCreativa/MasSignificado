@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>=..Más significado.=</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-12">
+          <div class="logo">
+            <h1><i class='bx bx-list-minus'></i>MÁS SIGNFICADO</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="boxButtonAdd d-flex justify-content-end">
+        <button class="handleBtnAdd btnShowAdd">
+          <i class='bx bx-plus'></i>
+        </button>
+      </div>
+
+      <!-- HEADENGTITLE -->
+      <div class="headingTitle">
+        <div class="col">
+          <h1>Palabra</h1>
+        </div>
+        <div class="col">
+          <h1>Definición</h1>
+        </div>
+        <div class="col">
+          <h1>Ejemplo</h1>
+        </div>
+        <div class="col">
+          <h1>Sinónimos</h1>
+        </div>
+        <div class="col"></div>
+      </div>
+      <!-- /HEADENGTITLE -->
+
+      <!-- SEARCHING -->
+      <div class="boxSearching">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <input type="text" class="searchInput" placeholder="Busca una palabra">
+            <button class="searchButton">
+              <i class='bx bx-search'></i>
+            </button>
+          </div>
+          <div class="col-12">
+            <p class="searchResult"></p>
+          </div>
+        </div>
+      </div>
+      <!-- /SEARCHING -->
+
+      <!-- LISTAPUNTE -->
+      <div class="boxContentApunte">
+        <ul class="list-unstyled itemsApunte">
+        </ul>
+      </div>
+      <!-- /LISTAPUNTE -->
+
+      <!-- ADD PALABRA -->
+      <div class="boxAddPalabra">
+        <div class="heading">
+          <h3>Crear una palabra</h3>
+        </div>
+        <form class="addSubmitForm">
+          <div class="row">
+            <div class="col-12">
+              <div class="allCheck">
+                <div class="fielChecks">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio"name="selectGramatica" value="Verbo">
+                    <div class="box">
+                      Verbo
+                    </div>
+                  </label>
+                </div>
+                <div class="fielChecks">
+                 <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="selectGramatica" value="Sustantivo">
+                    <div class="box">
+                      Sustantivo
+                    </div>
+                  </label>
+                </div>
+                <div class="fielChecks">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="selectGramatica" value="Adjetivo">
+                    <div class="box">
+                      Adjetivo
+                    </div>
+                  </label>
+                </div>
+                <div class="fielChecks">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="selectGramatica" value="Otro">
+                    <div class="box">
+                      Otro
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label>Palabra</label>
+              <input type="text" class="field palabraInput">
+               <h6 class="formError formError_Palabra">* Maximo 3 letras de palabra</h6>
+            </div>
+            <hr>
+            <div class="col-12">
+              <label>1. Definición</label>
+              <input type="text" class="field definicionInput">
+              <h6 class="formError formError_Definicion">* Maximo 10 letras de defición</h6>
+              <label>2. Definición</label>
+              <input type="text" class="field definicionInput_2">
+              <h6 class="formError formError_Definicion2">* Maximo 10 letras de defición</h6>
+              <label>3. Definición</label>
+              <input type="text" class="field definicionInput_3">
+              <h6 class="formError formError_Definicion3">* Maximo 10 letras de defición</h6>
+            </div>
+            <hr>
+            <div class="col-12">
+              <label>1. Ejemplo</label>
+              <input type="text" class="field ejemploInput">
+              <h6 class="formError formError_Ejemplo">* Maximo 10 letras de ejemplo</h6>
+              <label>2. Ejemplo</label>
+              <input type="text" class="field ejemploInput_2">
+              <h6 class="formError formError_Ejemplo2">* Maximo 10 letras de ejemplo</h6>
+              <label>3. Ejemplo</label>
+              <input type="text" class="field ejemploInput_3">
+              <h6 class="formError formError_Ejemplo3">* Maximo 10 letras de ejemplo</h6>
+            </div>
+            <hr>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-3">
+                  <label>1. Sinómino</label>
+                  <input type="text" class="field sinominosInput">
+                  <h6 class="formError formError_Sinonimos">* Maximo 3 letras de sinonimo</h6>
+                </div>
+                <div class="col-3">
+                  <label>2. Sinómino</label>
+                  <input type="text" class="field sinominosInput_2">
+                  <h6 class="formError formError_Sinonimos2">* Maximo 3 letras de sinonimo</h6>
+                </div>
+                <div class="col-3">
+                  <label>3. Sinómino</label>
+                  <input type="text" class="field sinominosInput_3">
+                  <h6 class="formError formError_Sinonimos3">* Maximo 3 letras de sinonimo</h6>
+                </div>
+                <div class="col-3">
+                  <label>4. Sinómino</label>
+                  <input type="text" class="field sinominosInput_4">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button class="btn btn-block btnHandleAddPalabra">
+                AGREGRAMOS
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /ADD PALABRA -->
+
+    </main>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>Design & Development: <a href="https://www.instagram.com/virginia.creativa/">@Virginia.Creativa</a> / Medellin
+        - Colombia @</p>
+      <p class="footer_year"></p>
+    </div>
+  </footer>
+
+  <!-- POP EDITABLE -->
+  <div class="popEdit">
+    <div class="boxEdit">
+      <div class="row">
+        <div class="col-12">
+          <h4>Editable</h4>
+        </div>
+        <div class="formError">
+          <div class="col-12">
+            <h6 class="formError_Null">* No esta vacia en formulario</h6>
+            <h6 class="formError_Palabra">* Maximo 3 letras de palabra</h6>
+            <h6 class="formError_Definicion">* Maximo 10 letras de defición</h6>
+            <h6 class="formError_Sinonimos">* Maximo 3 letras de sinónimos y 4 listas</h6>
+          </div>
+        </div>
+      </div>
+      <form class="formEditable">
+        <div class="btnExitEditable">
+          <i class='bx bx-message-square-x'></i>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label>Palabra:</label>
+            <input type="text" class="field palabraInputEditable" placeholder="Palabra">
+          </div>
+          <div class="col-12">
+            <label>Definición:</label>
+            <input type="text" class="field definicionInputEditable" placeholder="Definición">
+          </div>
+          <div class="col-12">
+            <label>Ejemplo:</label>
+            <input type="text" class="field ejemploInputEditable" placeholder="Ejemplo">
+          </div>
+          <div class="col-12">
+            <label>Sinóminos:</label>
+            <input type="text" class="field sinominosInputEditable" placeholder="Sinóminos">
+          </div>
+          <div class="col-12">
+            <div class="allCheck">
+              <div class="fielChecks">
+                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Verbo">
+                <label class="form-check-label">
+                  Verbo
+                </label>
+              </div>
+              <div class="fielChecks">
+                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Sustantivo">
+                <label class="form-check-label">
+                  Sustantivo
+                </label>
+              </div>
+              <div class="fielChecks">
+                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Adjetivo">
+                <label class="form-check-label">
+                  Adjetivo
+                </label>
+              </div>
+              <div class="fielChecks">
+                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Otro">
+                <label class="form-check-label">
+                  Otro
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-block btnUpdate">
+              Actualmente
+              <i class='bx bx-up-arrow-circle'></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- /POP EDITABLE -->
+
+  <!-- /FOOTER -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
