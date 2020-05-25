@@ -32,24 +32,6 @@
         </button>
       </div>
 
-      <!-- HEADENGTITLE -->
-      <div class="headingTitle">
-        <div class="col">
-          <h1>Palabra</h1>
-        </div>
-        <div class="col">
-          <h1>Definición</h1>
-        </div>
-        <div class="col">
-          <h1>Ejemplo</h1>
-        </div>
-        <div class="col">
-          <h1>Sinónimos</h1>
-        </div>
-        <div class="col"></div>
-      </div>
-      <!-- /HEADENGTITLE -->
-
       <!-- SEARCHING -->
       <div class="boxSearching">
         <div class="row">
@@ -84,14 +66,14 @@
               <div class="allCheck">
                 <div class="fielChecks">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio"name="selectGramatica" value="Verbo">
+                    <input class="form-check-input" type="radio" name="selectGramatica" value="Verbo">
                     <div class="box">
                       Verbo
                     </div>
                   </label>
                 </div>
                 <div class="fielChecks">
-                 <label class="form-check-label">
+                  <label class="form-check-label">
                     <input class="form-check-input" type="radio" name="selectGramatica" value="Sustantivo">
                     <div class="box">
                       Sustantivo
@@ -119,7 +101,7 @@
             <div class="col-12">
               <label>Palabra</label>
               <input type="text" class="field palabraInput">
-               <h6 class="formError formError_Palabra">* Maximo 3 letras de palabra</h6>
+              <h6 class="formError formError_Palabra">* Maximo 3 letras de palabra</h6>
             </div>
             <hr>
             <div class="col-12">
@@ -197,73 +179,104 @@
   <!-- POP EDITABLE -->
   <div class="popEdit">
     <div class="boxEdit">
-      <div class="row">
-        <div class="col-12">
-          <h4>Editable</h4>
-        </div>
-        <div class="formError">
-          <div class="col-12">
-            <h6 class="formError_Null">* No esta vacia en formulario</h6>
-            <h6 class="formError_Palabra">* Maximo 3 letras de palabra</h6>
-            <h6 class="formError_Definicion">* Maximo 10 letras de defición</h6>
-            <h6 class="formError_Sinonimos">* Maximo 3 letras de sinónimos y 4 listas</h6>
-          </div>
-        </div>
+      <div class="heading">
+        <h3>Editable</h3>
       </div>
       <form class="formEditable">
-        <div class="btnExitEditable">
-          <i class='bx bx-message-square-x'></i>
-        </div>
         <div class="row">
-          <div class="col-12">
-            <label>Palabra:</label>
-            <input type="text" class="field palabraInputEditable" placeholder="Palabra">
-          </div>
-          <div class="col-12">
-            <label>Definición:</label>
-            <input type="text" class="field definicionInputEditable" placeholder="Definición">
-          </div>
-          <div class="col-12">
-            <label>Ejemplo:</label>
-            <input type="text" class="field ejemploInputEditable" placeholder="Ejemplo">
-          </div>
-          <div class="col-12">
-            <label>Sinóminos:</label>
-            <input type="text" class="field sinominosInputEditable" placeholder="Sinóminos">
-          </div>
           <div class="col-12">
             <div class="allCheck">
               <div class="fielChecks">
-                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Verbo">
                 <label class="form-check-label">
-                  Verbo
+                  <input class="form-check-input" type="radio" name="selectGramatica" value="Verbo">
+                  <div class="box">
+                    Verbo
+                  </div>
                 </label>
               </div>
               <div class="fielChecks">
-                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Sustantivo">
                 <label class="form-check-label">
-                  Sustantivo
+                  <input class="form-check-input" type="radio" name="selectGramatica" value="Sustantivo">
+                  <div class="box">
+                    Sustantivo
+                  </div>
                 </label>
               </div>
               <div class="fielChecks">
-                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Adjetivo">
                 <label class="form-check-label">
-                  Adjetivo
+                  <input class="form-check-input" type="radio" name="selectGramatica" value="Adjetivo">
+                  <div class="box">
+                    Adjetivo
+                  </div>
                 </label>
               </div>
               <div class="fielChecks">
-                <input class="form-check-input" type="radio" name="selectGramaticaEditable" value="Otro">
                 <label class="form-check-label">
-                  Otro
+                  <input class="form-check-input" type="radio" name="selectGramatica" value="Otro">
+                  <div class="box">
+                    Otro
+                  </div>
                 </label>
               </div>
-
             </div>
           </div>
           <div class="col-12">
+            <label>Palabra</label>
+            <input type="text" class="field palabraInput">
+            <h6 class="formError formError_Palabra">* Maximo 3 letras de palabra</h6>
+          </div>
+          <hr>
+          <div class="col-12">
+            <label>1. Definición</label>
+            <input type="text" class="field definicionInput">
+            <h6 class="formError formError_Definicion">* Maximo 10 letras de defición</h6>
+            <label>2. Definición</label>
+            <input type="text" class="field definicionInput_2">
+            <h6 class="formError formError_Definicion2">* Maximo 10 letras de defición</h6>
+            <label>3. Definición</label>
+            <input type="text" class="field definicionInput_3">
+            <h6 class="formError formError_Definicion3">* Maximo 10 letras de defición</h6>
+          </div>
+          <hr>
+          <div class="col-12">
+            <label>1. Ejemplo</label>
+            <input type="text" class="field ejemploInput">
+            <h6 class="formError formError_Ejemplo">* Maximo 10 letras de ejemplo</h6>
+            <label>2. Ejemplo</label>
+            <input type="text" class="field ejemploInput_2">
+            <h6 class="formError formError_Ejemplo2">* Maximo 10 letras de ejemplo</h6>
+            <label>3. Ejemplo</label>
+            <input type="text" class="field ejemploInput_3">
+            <h6 class="formError formError_Ejemplo3">* Maximo 10 letras de ejemplo</h6>
+          </div>
+          <hr>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-3">
+                <label>1. Sinómino</label>
+                <input type="text" class="field sinominosInput">
+                <h6 class="formError formError_Sinonimos">* Maximo 3 letras de sinonimo</h6>
+              </div>
+              <div class="col-3">
+                <label>2. Sinómino</label>
+                <input type="text" class="field sinominosInput_2">
+                <h6 class="formError formError_Sinonimos2">* Maximo 3 letras de sinonimo</h6>
+              </div>
+              <div class="col-3">
+                <label>3. Sinómino</label>
+                <input type="text" class="field sinominosInput_3">
+                <h6 class="formError formError_Sinonimos3">* Maximo 3 letras de sinonimo</h6>
+              </div>
+              <div class="col-3">
+                <label>4. Sinómino</label>
+                <input type="text" class="field sinominosInput_4">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
             <button class="btn btn-block btnUpdate">
-              Actualmente
-              <i class='bx bx-up-arrow-circle'></i>
+              AGREGRAMOS
             </button>
           </div>
         </div>

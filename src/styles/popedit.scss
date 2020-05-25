@@ -14,7 +14,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100%;
-  
+
 
   .boxEdit {
     display: none;
@@ -24,7 +24,11 @@
     padding: 20px;
     width: 50vw;
     min-height: 32vh;
-    
+
+    .heading {
+      margin-bottom: 20px;
+    }
+
     .btnExitEditable {
       position: absolute;
       top: 8px;
@@ -33,14 +37,7 @@
       color: $red;
       font-size: 22px;
     }
-    label {
-      margin-bottom: 0;
-      color: $gray;
-    }
-    .field {
-      margin-bottom: 10px;
-    }
-  
+
     .btnUpdate {
       margin-top: 10px;
       border: none;
@@ -50,16 +47,17 @@
       text-align: center;
       color: #fff;
       font-size: 20px;
+
       .bx {
         position: relative;
         top: 4px;
         color: #fff;
         font-size: 24px;
       }
-  
+
       &:hover {
         background-color: $green_b;
       }
     }
   }
-  }
+}
