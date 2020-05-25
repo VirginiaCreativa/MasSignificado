@@ -50,9 +50,3 @@ window.handleBtnElimina = (id) => {
       console.log('Elimina: ', id);
     });
 };
-
-// elements.itemsApunte.addEventListener('click', (e) => {
-//   const id = e.target.dataset.id;
-//   const li = document.querySelector(`[data-id="${id}"]`);
-//   elements.itemsApunte.removeChild(li);
-// });

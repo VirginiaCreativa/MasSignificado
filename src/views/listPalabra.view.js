@@ -17,7 +17,7 @@ export const getInnerAdd = (doc, pal, def, sin, gram, ej) => {
           <h3>${pal}</h3>
         </div>
         <div class="item_control justify-content-end">
-          <button class="btnEdit" data-editid=${doc} onclick="handleBtnEdit('${doc}', '${pal}', '${def}', '${sin}', '${gram}', '${ej}')">
+          <button class="btnEdit" data-editid=${doc} onclick="handleBtnEdit('${doc}')">
             <i class='bx bx-edit-alt'></i>
           </button>
             <button class="btnElimina" data-id=${doc} onclick="handleBtnElimina('${doc}')">
