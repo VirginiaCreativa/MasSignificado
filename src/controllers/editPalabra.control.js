@@ -52,7 +52,6 @@ window.handleBtnEdit = (id) => {
     const sinominosInputEditable2 = elements.sinominosInputEditable2.value;
     const sinominosInputEditable3 = elements.sinominosInputEditable3.value;
     const sinominosInputEditable4 = elements.sinominosInputEditable4.value;
-    const gramaInputEditable = elements.gramaInputEditable.value;
 
     let definicionesArray = [];
     let ejemplosArray = [];
@@ -80,7 +79,7 @@ window.handleBtnEdit = (id) => {
     let filteredSin = sinonminosArray.filter((el) => el);
 
     const itemGram = () => {
-      const radios = elements.gramaInput;
+      const radios = elements.gramaInputEditable;
       let select;
       for (let i = 0; i < radios.length; i += 1) {
         if (radios[i].checked) {
