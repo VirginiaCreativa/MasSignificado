@@ -25,6 +25,7 @@ async function showContentListPalabra() {
             let def = doc.data().definicion;
             let sin = doc.data().sinonimos;
             let gram = doc.data().gramatical;
+
             let ej = doc.data().ejemplo || 'no tiene escrito';
             getInnerAdd(doc.id, pal, def, sin, gram, ej);
           } else {

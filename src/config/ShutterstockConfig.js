@@ -1,9 +1,9 @@
 import sstk from 'shutterstock-api';
 
-const applicationConsumerId = 'TXjMyg6YHHVWiMT0WjdTn8byfrGcZFGx';
-const applicationConsumerSecret = 'ZWTQN4NAXAx4qQY8';
+const id = 'TXjMyg6YHHVWiMT0WjdTn8byfrGcZFGx';
+const secret = 'ZWTQN4NAXAx4qQY8';
 
-sstk.setBasicAuth(applicationConsumerId, applicationConsumerSecret);
+sstk.setBasicAuth(id, secret);
 const apiShutterstock = new sstk.ImagesApi();
 
 export default apiShutterstock;

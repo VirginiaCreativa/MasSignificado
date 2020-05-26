@@ -8,17 +8,17 @@ export function getFirtsLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const queryParams = {
-  query: 'New York',
-  sort: 'popular',
-  orientation: 'horizontal',
-};
+// const queryParams = {
+//   query: 'New York',
+//   sort: 'popular',
+//   orientation: 'horizontal',
+// };
 
-apiShutterstock
-  .searchImages(queryParams)
-  .then(function ({ data }) {
-    console.log(data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+// apiShutterstock
+//   .searchImages(queryParams)
+//   .then(function ({ data }) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.error(error);
+//   });

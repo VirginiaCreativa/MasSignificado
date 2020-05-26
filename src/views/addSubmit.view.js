@@ -21,9 +21,6 @@ function quitValidationEjemplo() {
 function quitValidationSinonimo() {
   return elements.sinominosInput.addEventListener('mouseout', (ev) => {
     elements.formError_Sinonimos.style.display = 'none';
-    elements.formError_Sinonimos2.style.display = 'none';
-    elements.formError_Sinonimos3.style.display = 'none';
-    elements.formError_Sinonimos4.style.display = 'none';
   });
 }
 
