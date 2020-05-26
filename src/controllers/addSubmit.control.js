@@ -11,8 +11,6 @@ elements.handleBtnAdd.addEventListener('click', (ev) => {
   elements.boxContentApunte.style.display = isShow ? 'block' : 'none';
   elements.boxAddPalabra.style.display = !isShow ? 'block' : 'none';
 
-  console.log('===>', ev.target);
-
   if (!isShow) {
     elements.handleBtnAdd.classList.remove('btnShowAdd');
     elements.handleBtnAdd.classList.add('btnHideAdd');
