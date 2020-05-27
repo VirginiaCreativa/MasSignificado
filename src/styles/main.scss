@@ -10,6 +10,7 @@
     border-radius: 2px;
     padding: 0;
     text-align: center;
+
     .bx {
       padding: 5px;
       height: 36px;
@@ -80,6 +81,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+
         .item_palabra {
           h3 {
             color: $green;
@@ -129,16 +131,7 @@
       }
 
       .boxContent {
-        display: grid;
-        grid-template-columns:  1fr 220px;
         margin-bottom: 15px;
-
-        .column {
-          img {
-            max-height: 100%;
-            height: 80px;
-          }
-        }
 
         p {
           display: block;
@@ -216,7 +209,7 @@
 
   .addSubmitForm {
     position: relative;
-   
+
     .btnHandleAddPalabra {
       margin: 20px 0;
       background-color: $green;
@@ -229,6 +222,7 @@
     }
   }
 }
+
 .formError {
   position: absolute;
   top: 8px;
@@ -236,8 +230,7 @@
   border-radius: 4px;
   padding: 6px 0;
 
-  &[class*="formError_"]
-  {
+  &[class*="formError_"] {
     display: none;
     margin-bottom: 0;
     color: $red;
@@ -245,4 +238,3 @@
     font-weight: 500;
   }
 }
-
